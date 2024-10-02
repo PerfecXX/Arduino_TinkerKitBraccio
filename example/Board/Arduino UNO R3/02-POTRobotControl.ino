@@ -52,6 +52,7 @@ void setup() {
 }
 
 void loop() {
+  
   // Read the each Potentiometer as analog value
   base_ana_val = analogRead(BASE_POT);
   shoulder_ana_val = analogRead(SHOULDER_POT);
@@ -83,7 +84,7 @@ void loop() {
   Serial.print(" GripperAngle:");
   Serial.println(gripper_angle);
 
-  // Control the each servo motor with angle
+  // Control the each servo motor with angle (degree)
   //                    step_delay,base,shoulder,elbow,wrist vertical,wrist rotation,gripper
   Braccio.ServoMovement(10, base_angle, shoulder_angle, elbow_angle, wrist_rot_angle, wrist_ver_angle, gripper_angle);
 }
