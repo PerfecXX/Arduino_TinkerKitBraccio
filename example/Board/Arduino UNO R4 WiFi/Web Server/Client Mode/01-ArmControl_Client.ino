@@ -12,8 +12,8 @@ Copyright (C) 2024 Teeraphat Kullanankanjana. All rights reserved.
 #include "home_page.h"       // Include the homepage HTML
 
 // Network credentials
-const char *ssid = "iMakeEDU";          // Replace with your Wi-Fi network name
-const char *password = "imake1234";  // Replace with your Wi-Fi network password
+const char *ssid = "your_ssid";          // Replace with your Wi-Fi network name
+const char *password = "your_password";  // Replace with your Wi-Fi network password
 
 // Create WiFiServer on port 80
 WiFiServer server(80);
